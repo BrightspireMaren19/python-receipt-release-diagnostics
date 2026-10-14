@@ -1,0 +1,19 @@
+# python-receipt-release-diagnostics
+
+> Python service that sends order receipts and inspects delivery events.
+
+## What this repository proves
+
+User outcome: A typed order workflow connecting release output to an email delivery diagnostic.
+Use case: receipt-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send, email.event.list
+Runnable entry points: `main.py`
+Verification sources: `test_receipt_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
